@@ -22,8 +22,13 @@ def timer(seconds):
 
     print("Timer finished!")
 
-# Set the duration of the timer (in seconds)
-duration = 60 * 20
+# Get user input for duration
+hours = int(input("Enter the number of hours: "))
+minutes = int(input("Enter the number of minutes: "))
+seconds = int(input("Enter the number of seconds: "))
+
+# Calculate total duration in seconds
+duration = (hours * 60 * 60) + (minutes * 60) + seconds
 
 # Start the timer
 timer(duration)
